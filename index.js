@@ -1,3 +1,7 @@
 const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
-// Code your solution here
+let totalBatteries = batteryBatches.reduce(superCounter, 0)
+
+function superCounter(accumulator, element){
+    return element + accumulator;
+}
